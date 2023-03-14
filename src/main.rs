@@ -26,7 +26,7 @@ fn help(program: String) {
 
 fn entry() -> Result<(), ()> {
     let mut args = env::args();
-    let program = args.next().expect("Path to program is expected");
+    let program = args.next().expect("Path to program is expected!");
 
     match args.next() {
         Some(arg) => match arg.as_str() {
